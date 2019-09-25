@@ -3,6 +3,5 @@
 ![](https://zupimages.net/up/19/39/ey6x.png)
 ![](https://zupimages.net/up/19/39/gndw.png)
 ![](https://zupimages.net/up/19/39/63s6.png)
-![](https://zupimages.net/up/19/39/2peg.png)
 ![](https://zupimages.net/up/19/39/lq3s.png)
 ![](https://zupimages.net/up/19/39/gn9o.png)
