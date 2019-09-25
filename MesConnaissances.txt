@@ -1,4 +1,4 @@
-# le titre en gros 
-# le titre en pas trop gros #
+# le titre en gros #
+## le titre en pas trop gros ##
 ![]lien de limage entre ()
 zupimages pour héberger limage que tu veux 
