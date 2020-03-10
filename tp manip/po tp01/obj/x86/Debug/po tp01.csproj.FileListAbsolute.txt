@@ -1,0 +1,7 @@
+U:\SI4\tp03\tp manip\po tp01\bin\Debug\po tp01.exe
+U:\SI4\tp03\tp manip\po tp01\bin\Debug\po tp01.pdb
+U:\SI4\tp03\tp manip\po tp01\obj\x86\Debug\po tp01.exe
+U:\SI4\tp03\tp manip\po tp01\obj\x86\Debug\po tp01.pdb
+U:\SI4\tp03\tp manip\po tp01\bin\Debug\dllBibliothèque.dll
+U:\SI4\tp03\tp manip\po tp01\bin\Debug\dllBibliothèque.xml
+U:\SI4\tp03\tp manip\po tp01\obj\x86\Debug\po tp01.csprojResolveAssemblyReference.cache

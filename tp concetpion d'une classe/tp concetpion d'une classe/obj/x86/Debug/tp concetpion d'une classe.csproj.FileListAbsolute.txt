@@ -1,0 +1,5 @@
+U:\SI4\tp03\tp concetpion d'une classe\tp concetpion d'une classe\obj\x86\Debug\tp concetpion d'une classe.csprojResolveAssemblyReference.cache
+U:\SI4\tp03\tp concetpion d'une classe\tp concetpion d'une classe\bin\Debug\tp concetpion d'une classe.exe
+U:\SI4\tp03\tp concetpion d'une classe\tp concetpion d'une classe\bin\Debug\tp concetpion d'une classe.pdb
+U:\SI4\tp03\tp concetpion d'une classe\tp concetpion d'une classe\obj\x86\Debug\tp concetpion d'une classe.exe
+U:\SI4\tp03\tp concetpion d'une classe\tp concetpion d'une classe\obj\x86\Debug\tp concetpion d'une classe.pdb

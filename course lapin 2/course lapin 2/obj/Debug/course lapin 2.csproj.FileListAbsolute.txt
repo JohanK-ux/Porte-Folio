@@ -1,0 +1,7 @@
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\obj\Debug\course lapin 2.csprojAssemblyReference.cache
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\obj\Debug\course lapin 2.csproj.CoreCompileInputs.cache
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\bin\Debug\course lapin 2.exe.config
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\bin\Debug\course lapin 2.exe
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\bin\Debug\course lapin 2.pdb
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\obj\Debug\course lapin 2.exe
+C:\Users\jklatt\source\repos\course lapin 2\course lapin 2\obj\Debug\course lapin 2.pdb

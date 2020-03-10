@@ -1,0 +1,112 @@
+
+1)
+
+select libelle,etage from site;
++-----------------+-------+
+| libelle         | etage |
++-----------------+-------+
+| hifi            |     1 |
+| bricolage       |     1 |
+| electro-menager |     2 |
+| confection      |     2 |
+| arts menagers   |     3 |
+| chaussures      |     4 |
++-----------------+-------+
+
+2) 
+ select* from classe;
++-------+-----------------+-------+
+| noart | marque          | rayon |
++-------+-----------------+-------+
+| A100  | bosch           | R2    |
+| A150  | AEG             | R3    |
+| A200  | electrolux      | R3    |
+| A250  | moulinex        | R3    |
+| A300  | kappa           | R4    |
+| A350  | ellesse         | R4    |
+| A400  | schott          | R4    |
+| A450  | vans            | R4    |
+| A500  | philips         | R1    |
+| A550  | Villeroy & boch | R5    |
++-------+-----------------+-------+
+3) 
+select rayon from site; 
++-------+
+| rayon |
++-------+
+| R1    |
+| R2    |
+| R3    |
+| R4    |
+| R5    |
+| R6    |
++-------+
+4)
+select noemp from employe where nom like "L%";
++-------+
+| noemp |
++-------+
+|     5 |
+|     6 |
++-------+
+5) select noemp,nom from employe where salaire <=4000 and salaire >=1000;
++-------+---------+
+| noemp | nom     |
++-------+---------+
+|     1 | Dupont  |
+|     2 | Durand  |
+|     3 | Martin  |
+|     4 | Duval   |
+|     5 | Legrand |
++-------+---------+
+6)select nomemp,nom,libelle from employe inner join site on employe.rayon=site.rayon order by libelle;
++-------+----------+---------------+
+| noemp | nom      | libelle       |
++-------+----------+---------------+
+|     5 | Legrand  | arts menagers |
+|     7 | Berteaux | arts menagers |
+|     8 | Mansart  | chaussures    |
+|     6 | Lenotre  | confection    |
+|     3 | Martin   | confection    |
+|     1 | Dupont   | hifi          |
+|     4 | Duval    | hifi          |
+|     2 | Durand   | hifi          |
++-------+----------+---------------+
+
+7)select classe.noart,marque from site inner join classe on site.rayon=classe.rayon inner join ventes on classe.noart=ventes.noart;
+
++-------+----------+
+| noart | marque   |
++-------+----------+
+| A100  | bosch    |
+| A150  | AEG      |
+| A150  | AEG      |
+| A150  | AEG      |
+| A150  | AEG      |
+| A250  | moulinex |
+| A300  | kappa    |
+| A300  | kappa    |
+| A350  | ellesse  |
+| A450  | vans     |
++-------+----------+
+8)select count(*)from employe;
++----------+
+| count(*) |
++----------+
+|        8 |
++----------+
+9)select avg(salaire) from employe inner join site on employe.rayon=site.rayon where libelle="hifi";
++--------------+
+| avg(salaire) |
++--------------+
+|  2300.000000 |
++--------------+
+10)MariaDB [magasin]> select rayon from employe group by rayon having sum(salaire)>=7000;
+
++-------+
+| rayon |
++-------+
+| R4    |
+| R5    |
++-------+
+

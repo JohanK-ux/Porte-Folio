@@ -1,0 +1,5 @@
+U:\SI4\tp03\collection typée\collection typée\obj\x86\Debug\collection typée.csprojResolveAssemblyReference.cache
+U:\SI4\tp03\collection typée\collection typée\bin\Debug\collection typée.exe
+U:\SI4\tp03\collection typée\collection typée\bin\Debug\collection typée.pdb
+U:\SI4\tp03\collection typée\collection typée\obj\x86\Debug\collection typée.exe
+U:\SI4\tp03\collection typée\collection typée\obj\x86\Debug\collection typée.pdb

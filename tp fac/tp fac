@@ -1,0 +1,63 @@
+1.Donner le produit cartésien de la table etu et cours. 
+
+select *  from etu inner join cours 
++------+--------+-------+-------+---------+-------+--------+
+| num  | nom    | adr   | code  | nom_ens | salle | prix   |
++------+--------+-------+-------+---------+-------+--------+
+| 1128 | Durand | Orsay | ALGO  | Ullman  |   345 | 180.00 |
+| 1128 | Durand | Orsay | BD    | Korth   |   231 | 200.00 |
+| 1128 | Durand | Orsay | MATHS | Korth   |   125 | 250.00 |
+| 2140 | Dupont | Paris | ALGO  | Ullman  |   345 | 180.00 |
+| 2140 | Dupont | Paris | BD    | Korth   |   231 | 200.00 |
+| 2140 | Dupont | Paris | MATHS | Korth   |   125 | 250.00 |
+| 3213 | Dubois | Orsay | ALGO  | Ullman  |   345 | 180.00 |
+| 3213 | Dubois | Orsay | BD    | Korth   |   231 | 200.00 |
+| 3213 | Dubois | Orsay | MATHS | Korth   |   125 | 250.00 |
++------+--------+-------+-------+---------+-------+--------+
+
+table suit : 
++------+-------+
+| num  | code  |
++------+-------+
+| 2140 | ALGO  |
+| 3213 | BD    |
+| 2140 | BD    |
+| 2140 | MATHS |
++------+-------+
+
+2) Faire l'union des tables ETU et ETU2
+select * from etu union select * from etu2
++------+--------+-------+
+| num  | nom    | adr   |
++------+--------+-------+
+| 1128 | Durand | Orsay |
+| 2140 | Dupont | Paris |
+| 3213 | Dubois | Orsay |
+| 2518 | Smith  | Bures |
++------+--------+-------+
+
+3)
+select * from etu where num In(select num from etu2); 
++------+--------+-------+
+| num  | nom    | adr   |
++------+--------+-------+
+| 1128 | Durand | Orsay |
+| 2140 | Dupont | Paris |
++------+--------+-------+
+
+4) select * from etu where not num In(select num from etu2);
++------+--------+-------+
+| num  | nom    | adr   |
++------+--------+-------+
+| 3213 | Dubois | Orsay |
++------+--------+-------+
+
+5)select * from etu where num not in(select num from suit where code ="MATHS")
++------+--------+-------+
+| num  | nom    | adr   |
++------+--------+-------+
+| 1128 | Durand | Orsay |
+| 3213 | Dubois | Orsay |
++------+--------+-------+
+
+6)select * from etu where num in(select num from suit where code ="MATHS"and "Algo")
